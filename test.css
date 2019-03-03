@@ -1,0 +1,83 @@
+div.box{
+  width:100px;
+  height:100px;
+  background:blue;
+  position:absolute;
+  top:20px;
+  left:20px;
+  animation:move1 5s 20;
+}
+div.box1{
+  width:100px;
+  height:100px;
+  background:red;
+  position:absolute;
+  top:20px;
+  right:20px;
+  animation:move2 5s 20;
+}
+div.box2{
+  width:100px;
+  height:100px;
+  background:green;
+  position:absolute;
+  bottom:20px;
+  right:20px;
+  animation:move3 5s 20;
+}
+div.box3{
+  width:100px;
+  height:100px;
+  background:yellow;
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  animation:move4 5s 20;
+}
+div.ball{
+  width:100px;
+  height:100px;
+  background:black;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-50px;
+  margin-top:-50px;
+  border-radius:50%;
+  animation:move 2s 10;
+  }
+@keyframes move{
+  from {left:0%}
+  to {left:100%}
+}
+@keyframes move1{
+  from {top:0%}
+  to {top:50%}
+}
+@keyframes move2{
+  from {top:0%}
+  to {top:50%}
+}
+@keyframes move3{
+  from {bottom:0%}
+  to {bottom:50%}
+}
+@keyframes move4{
+  from {bottom:0%}
+  to {bottom:50%}
+}
+@media only screen and (max-width: 480px) {
+    div.ball{
+     width:100px;
+    height:100px;
+    background:lightgreen;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-50px;
+  margin-top:-50px;
+  border-radius:50%;
+  animation:move 2s 10;
+  }
+  }
+  
